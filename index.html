@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f92722c24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+         <h2>Generate a<br> <span>Random password</span></h2>
+
+          <div class="password">
+             <input type="text" placeholder="Password" readonly id="passworDisplay">
+              <i class="fa-solid fa-copy" id="copy"></i>
+          </div>
+
+                <div class="rangeContainer">
+                    <p>Password length</p>
+                    <p id="rangeNum"></p>
+                </div>
+                <input type="range" min="6" max="12" value="6" id="range">
+
+                <div class="checkbox">
+                    <label for="number">Number</label>
+                    <input type="checkbox" name="" id="number">
+                </div>
+
+                <div class="checkbox">
+                    <label for="upperCase">Upper Case</label>
+                    <input type="checkbox" name="" id="upperCase">
+                </div>
+
+                <div class="checkbox">
+                    <label for="lowerCase">Lower Case</label>
+                    <input type="checkbox" name="" id="lowerCase">
+                </div>
+                <div class="checkbox">
+                    <label for="symbol">Symbol</label>
+                    <input type="checkbox" name="" id="symbol">
+                </div>
+
+                <button id="generate">Generate password </button>
+
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
